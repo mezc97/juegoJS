@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>PIEDRA PAPEL TIJERA :D , nivel 0.1</h1>
+    <script>
+     
+          
+            function jugar(){
+                var usuario = prompt('opcion');
+                var opciones = ["piedra", "papel", "Tijera"];
+                var opcion = Math.floor((Math.random()*3));
+                if (opciones[opcion]==usuario){
+                    alert("OHHH ES UN EMPATE");
+                }
+                else if (opciones[opcion]==="piedra" && usuario==="papel"){
+                    alert(" has ecogido papel y la pc piedra, ganaste");
+                }
+                else if (opciones[opcion]==="piedra" && usuario==="tijera"){
+                    alert("has ecogido tijera y la pc piedra, pierdes");
+                }
+                else if (opciones[opcion]==="tijera" && usuario==="papel"){
+                    alert("has ecogido papel y la pc tijera,pierdes");
+                }
+                else if (opciones[opcion]==="tijera" && usuario==="piedra"){
+                    alert("has ecogido piedra y la pc tijera,ganaste");
+                }
+                else if (opciones[opcion]==="papel" && usuario==="tijera"){
+                    alert("has ecogido tijera y la pc papel,ganaste");
+                }
+                else if (opciones[opcion]==="papel" && usuario==="piedra"){
+                    alert("has ecogido piedra y la pc papel,pierdes");
+                }
+                else{
+
+                return alert("lo siento, no logramos entenderte , pero se feliz :)")
+                } 
+
+            }
+            jugar();
+        
+    </script>
+</body>
+</html>
